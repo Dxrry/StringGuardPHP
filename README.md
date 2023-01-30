@@ -21,7 +21,7 @@
         <?php
 
         require __DIR__ . '/vendor/autoload.php';
-        $ds = new \App\DSec\Main("-<6/Gf>;.y`/xzsiVlrLUK|20DSvdjHF,ObkTIEq4N'3Qch\R7JpuYa15:PXogmW=9Bnw AC_e8MtZ", 176);
+        $ds = new \App\DEncrypt\Main("-<6/Gf>;.y`/xzsiVlrLUK|20DSvdjHF,ObkTIEq4N'3Qch\R7JpuYa15:PXogmW=9Bnw AC_e8MtZ", 176);
         
         $exampleInputedText = "Let's Encrypt Me Bro";
         $exampleEncryptText = $ds->encryptText($exampleInputedText);
