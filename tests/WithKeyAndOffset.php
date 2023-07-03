@@ -24,7 +24,7 @@ echo "\n\n\n";
 // str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789;`</>- |_=,.:ABCDEFGHIJKLMNOPQRSTUVWXYZ\/'");
 // result shuffle :
 // -<6/Gf>;.y`/xzsiVlrLUK|20DSvdjHF,ObkTIEq4N'3Qch\R7JpuYa15:PXogmW=9Bnw AC_e8MtZ
-$ds = new \App\DSec\Main("-<6/Gf>;.y`/xzsiVlrLUK|20DSvdjHF,ObkTIEq4N'3Qch\R7JpuYa15:PXogmW=9Bnw AC_e8MtZ", 133);
+$ds = new \App\DEncrypt\Main("-<6/Gf>;.y`/xzsiVlrLUK|20DSvdjHF,ObkTIEq4N'3Qch\R7JpuYa15:PXogmW=9Bnw AC_e8MtZ", 133);
 
 $exampleInputedText = "Let's Encrypt Me Bro";
 $exampleEncryptText = $ds->encryptText($exampleInputedText);
