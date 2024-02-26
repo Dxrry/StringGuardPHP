@@ -1,4 +1,4 @@
-# DEncrypt-PHP - Simple Text Encrypt & Decrypt For PHP
+# DEncrypt-PHP - Simple Text Encrypt & Decrypt Using PHP
 
 ## Basic Usage
 
@@ -13,26 +13,25 @@ php >
 ```
 
 2. Choose your Offset key:
-```php
-From 100 - 999
-Example: 176
+```bash
+Select an offset key within the range of "100" to "999". For example, you can choose "176" as your offset key.
 ```
 
 3. Write your code:
 ```php
 <?php
+require_once __DIR__ . "/vendor/autoload.php";
 
-require __DIR__ . '/vendor/autoload.php';
-$ds = new \App\DEncrypt\Main("-<6/Gf>;.y`/xzsiVlrLUK|20DSvdjHF,ObkTIEq4N'3Qch\R7JpuYa15:PXogmW=9Bnw AC_e8MtZ", 176);
-        
+// Create an instance of StringGuard with a key set and offset 176.
+// The key set is the result of shuffling: str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789;`</>- |_=,.:ABCDEFGHIJKLMNOPQRSTUVWXYZ\/'")
+$ds = new \App\StringGuard("-<6/Gf>;.y`/xzsiVlrLUK|20DSvdjHF,ObkTIEq4N'3Qch\R7JpuYa15:PXogmW=9Bnw AC_e8MtZ", 176);
+
 $exampleInputedText = "Let's Encrypt Me Bro";
-$exampleEncryptText = $ds->encryptText($exampleInputedText);
-$exampleDecryptText = $ds->decryptText($exampleEncryptText);
-        
-echo "InputText: " . $exampleInputedText;
-echo "\n";
-echo "Encrypted: " . $exampleEncryptText;
-echo "\n";
+$exampleEncryptText = $ds->enc($exampleInputedText);
+$exampleDecryptText = $ds->dec($exampleEncryptText);
+
+echo "InputText: " . $exampleInputedText . "\n";
+echo "Encrypted: " . $exampleEncryptText . "\n";
 echo "Decrypted: " . $exampleDecryptText;
 ```
 ## Note

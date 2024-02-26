@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'dxrry/dencrypt-php',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'name' => 'dxrry/string-guard',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '116551a86165e1b7461fde0388956fe436bf2eab',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'dxrry/dencrypt-php' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+        'dxrry/string-guard' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '116551a86165e1b7461fde0388956fe436bf2eab',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

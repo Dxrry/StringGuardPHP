@@ -1,6 +1,6 @@
 {
-    "name": "dxrry/dencrypt-php",
-    "description": "Simple Text Encrypt & Decrypt For PHP",
+    "name": "dxrry/string-guard",
+    "description": "Simple Text Encrypt & Decrypt Using PHP",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
