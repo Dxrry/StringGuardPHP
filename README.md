@@ -1,4 +1,4 @@
-# DEncrypt-PHP - Simple Text Encrypt & Decrypt Using PHP
+# StringGuardPHP - Simple Text Encrypt & Decrypt Using PHP
 
 ## Basic Usage
 
